@@ -1,0 +1,4 @@
+interface:
+  display_name: "Curate Tattoo Portfolio"
+  short_description: "Select a balanced, polished tattoo portfolio"
+  default_prompt: "Use $curate-tattoo-portfolio to review the source tattoo photos and propose a filename-traceable portfolio shortlist."

@@ -1,0 +1,31 @@
+.DS_Store
+resources/Tattoo photos/
+**/.DS_Store
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+.next/
+.astro/
+
+# Temporary and generated review artifacts
+tmp/
+output/*
+!output/photo-curation/
+output/photo-curation/*
+!output/photo-curation/selected-25-contact-sheet.jpg
+!output/photo-curation/ranked-alternates-contact-sheet.jpg
+.playwright-cli/
+playwright-report/
+test-results/
+coverage/
+
+# Editor and OS state
+.idea/
+.vscode/
+*.swp
