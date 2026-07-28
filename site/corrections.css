@@ -4,17 +4,25 @@
 }
 
 .marquee {
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 0;
 }
 
-.marquee div {
+.marquee .marquee-track {
   display: flex;
-  width: 100%;
+  width: max-content;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 0.65rem 1.25rem;
-  white-space: normal;
-  animation: none;
+  animation: ticker 45s linear infinite;
+  will-change: transform;
+}
+
+.marquee .marquee-group {
+  display: flex;
+  min-width: max-content;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  padding-inline: 1rem;
+  white-space: nowrap;
 }
 
 .marquee span {
@@ -26,6 +34,12 @@
 
 .marquee span:not(:last-child)::after {
   content: "✦";
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .tattoo {
@@ -40,13 +54,10 @@
 }
 
 @media (max-width: 760px) {
-  .marquee div {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .marquee span {
-    gap: 0.65rem;
+  .marquee .marquee-group {
+    min-width: max-content;
+    gap: 1.25rem;
+    padding-inline: 1rem;
   }
 
   .about-heading {
@@ -68,5 +79,22 @@
 
   .tattoo {
     --tile: 10rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee .marquee-track {
+    width: 100%;
+    animation: none;
+  }
+
+  .marquee .marquee-group:first-child {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+
+  .marquee .marquee-group[aria-hidden="true"] {
+    display: none;
   }
 }
