@@ -1,0 +1,50 @@
+/* Corrections from first-device review. */
+.hero::before {
+  display: none;
+}
+
+.tattoo {
+  --tile: clamp(10rem, 17vw, 18rem);
+  flex-basis: var(--tile);
+}
+
+.tattoo img {
+  width: var(--tile);
+  height: var(--tile);
+  aspect-ratio: auto;
+}
+
+@media (max-width: 760px) {
+  .marquee {
+    padding: 0.8rem 1rem;
+  }
+
+  .marquee div {
+    width: auto;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.5;
+    animation: none;
+  }
+
+  .about-heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about h2 {
+    font-size: clamp(4rem, 20vw, 5rem);
+  }
+
+  .sticker {
+    position: static;
+    align-self: flex-end;
+    width: 7rem;
+    margin: 0 0 1rem;
+    transform: rotate(6deg);
+  }
+
+  .tattoo {
+    --tile: 10rem;
+  }
+}

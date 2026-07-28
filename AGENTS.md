@@ -8,7 +8,14 @@ The site must feel like Amy: warm, direct, playful, bold, colourful, precise, an
 
 ## Current phase
 
-This repository is in context and planning only. Do not scaffold an application, choose a framework, create production assets, edit source media, or implement the website until the user explicitly starts development.
+The repository now contains a dependency-free first review site in `site/`. Preserve the static GitHub Pages contract unless the user explicitly approves a later stack change. Never edit source media.
+
+## Working commands
+
+- Local preview: `python3 -m http.server 4173 --directory site`
+- JavaScript syntax: `node --check site/script.js`
+- Count public portfolio images: `find site/assets/portfolio -type f | wc -l` (expected: 25)
+- Deployment artifact size: `du -sh site`
 
 ## Required context
 

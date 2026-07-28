@@ -1,8 +1,16 @@
 # Seriously Ridiculous Tattoos website
 
-Planning repository for Amy Jane van den Bergh's artist and tattoo portfolio, booking, consent, FAQ, and future shop website.
+Static preview and planning repository for Amy Jane van den Bergh's artist and tattoo portfolio, booking, consent, FAQ, and future shop website.
 
-The repository is intentionally in a context-and-planning phase. No application stack or website implementation has been chosen yet.
+The first dependency-free preview lives in `site/`. It deliberately uses an email-draft enquiry rather than collecting data and marks unresolved business content honestly.
+
+## Run the preview
+
+```sh
+python3 -m http.server 4173 --directory site
+```
+
+Then open `http://127.0.0.1:4173/`. The same directory is the GitHub Pages deployment artifact.
 
 ## Start here
 
@@ -19,7 +27,7 @@ The repository is intentionally in a context-and-planning phase. No application 
 
 `resources/` contains Amy's original brief and circular-gallery references. The local `resources/Tattoo photos/` archive is intentionally gitignored; treat it as read-only source material. Do not crop, rename, recompress, delete, or overwrite originals.
 
-The repository tracks only 25 optimized portfolio candidates in `assets/portfolio/` and 10 optimized alternates in `assets/alternates/`. The full media archive is about 608 MB and must remain outside Git unless a later storage decision explicitly changes that.
+The repository tracks only 25 optimized portfolio candidates in `site/assets/portfolio/` and 10 optimized alternates in `assets/alternates/`. The full media archive is about 608 MB and must remain outside Git unless a later storage decision explicitly changes that.
 
 ## First review host
 
