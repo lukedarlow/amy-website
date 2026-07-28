@@ -3,6 +3,31 @@
   display: none;
 }
 
+.marquee {
+  padding: 0.8rem 1rem;
+}
+
+.marquee div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.65rem 1.25rem;
+  white-space: normal;
+  animation: none;
+}
+
+.marquee span {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  text-transform: uppercase;
+}
+
+.marquee span:not(:last-child)::after {
+  content: "✦";
+}
+
 .tattoo {
   --tile: clamp(10rem, 17vw, 18rem);
   flex-basis: var(--tile);
@@ -15,16 +40,13 @@
 }
 
 @media (max-width: 760px) {
-  .marquee {
-    padding: 0.8rem 1rem;
+  .marquee div {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .marquee div {
-    width: auto;
-    white-space: normal;
-    text-align: center;
-    line-height: 1.5;
-    animation: none;
+  .marquee span {
+    gap: 0.65rem;
   }
 
   .about-heading {
