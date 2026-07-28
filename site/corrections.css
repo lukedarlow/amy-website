@@ -23,6 +23,7 @@
   gap: 1.25rem;
   padding-inline: 1rem;
   white-space: nowrap;
+  animation: none;
 }
 
 .marquee span {
@@ -38,7 +39,7 @@
 
 @keyframes ticker {
   to {
-    transform: translateX(-50%);
+    transform: translateX(-33.333333%);
   }
 }
 
