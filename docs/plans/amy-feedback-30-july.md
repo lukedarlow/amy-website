@@ -41,6 +41,7 @@ Retain the current information architecture and visual language. Extend the sele
 - 2026-07-30: Link the exact consent PDF as a draft; do not add online consent handling.
 - 2026-07-30: Use Amy's supplied mobile-studio and aftercare wording, while retaining the existing review warnings.
 - 2026-07-30: Initially used all three portraits. **Superseded 30 July 2026:** keep only `IMG_4094.jpg` in the hero and remove the two working photos.
+- 2026-07-30: Amy requested one consistent portfolio treatment after Samsung review. Use the same small circular thumbnails for tattoos, flash, and reviews; flash and reviews expand on activation.
 - 2026-07-30: Use `#34104f` as the dark-purple ink colour.
 
 ## Discoveries and risks
@@ -57,7 +58,7 @@ Retain the current information architecture and visual language. Extend the sele
 - Inspect 390x844, 768x1024, and 1440x900 layouts; exercise all rails, lightboxes, FAQs, consent download, WhatsApp link, required phone field, mailto generation, mobile navigation, keyboard focus, and reduced-motion behavior.
 - Confirm every public asset path is relative, case-correct, and safe under `/amy-website/`.
 
-Completed 30 July 2026: JavaScript syntax passed; the portfolio count remained 25; the artifact measured 14 MB; mobile and desktop Chromium showed no page-level horizontal overflow; the browser console had no errors or warnings; loaded static requests returned 200/304; the flash lightbox restored focus to its opener; visible rail controls scrolled their own rail; and the empty phone field was both required and invalid. The supplied PDF and public copy have identical SHA-256 hashes.
+Completed 30 July 2026: JavaScript syntax passed; the portfolio count remained 25; the artifact measured 13 MB; mobile and desktop Chromium showed no page-level horizontal overflow; the browser console had no errors or warnings; loaded static requests returned 200/304; flash and review lightboxes rendered correctly and restored focus to their openers; visible rail controls scrolled their own rail; and the empty phone field was both required and invalid. The supplied PDF and public copy have identical SHA-256 hashes. For touch-first devices, portfolio images now decode asynchronously and the expensive translucent backdrop filter is disabled.
 
 ## Recovery and handoff
 
