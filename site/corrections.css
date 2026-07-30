@@ -3,6 +3,19 @@
   display: none;
 }
 
+.sunburst {
+  border-width: 2px;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.sunburst img {
+  inset: 14%;
+  width: 72%;
+  height: 72%;
+  aspect-ratio: auto;
+  border-width: 2px;
+}
+
 .marquee {
   padding: 0.8rem 0;
 }
@@ -81,6 +94,7 @@
   .tattoo {
     --tile: 10rem;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {

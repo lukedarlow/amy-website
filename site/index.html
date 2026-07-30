@@ -32,9 +32,12 @@
         <p class="hero-lede">Bold colour, fine lines and seriously personal tattoos—thoughtfully drawn for wonderfully individual humans.</p>
         <div class="hero-actions"><a class="button button-dark" href="#contact">Start your tattoo</a><a class="text-link" href="#work">See the work <span aria-hidden="true">↘</span></a></div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="sunburst"><span class="scribble">get inky<br>with AJ</span></div>
-        <div class="spark spark-one">✦</div><div class="spark spark-two">✦</div>
+      <div class="hero-art">
+        <div class="sunburst">
+          <img src="assets/artist/aj-hero-640.webp" srcset="assets/artist/aj-hero-640.webp 640w, assets/artist/aj-hero-1024.webp 1024w" sizes="(max-width: 760px) 62vw, 29vw" width="1024" height="1029" alt="AJ smiling while holding her tattoo machine">
+          <span class="scribble" aria-hidden="true">get inky<br>with AJ</span>
+        </div>
+        <div class="spark spark-one" aria-hidden="true">✦</div><div class="spark spark-two" aria-hidden="true">✦</div>
       </div>
       <p class="scroll-note" aria-hidden="true">scroll for the good stuff ↓</p>
     </section>
@@ -60,9 +63,9 @@
     <section class="work section" id="work" aria-labelledby="work-title">
       <div class="section-marker light">02 / Selected work</div>
       <div class="work-heading"><h2 id="work-title">Pick a circle.<br><em>Get curious.</em></h2><p>Black &amp; white on the outside.<br>Full-colour character within.</p></div>
-      <div class="gallery-shell">
-        <div class="gallery-controls"><span><b>25</b> little windows into AJ's world</span><div><button class="round-control" type="button" data-gallery-prev aria-label="Previous tattoos">←</button><button class="round-control" type="button" data-gallery-next aria-label="Next tattoos">→</button></div></div>
-        <div class="gallery" data-gallery tabindex="0" aria-label="Selected tattoo portfolio. Use arrow keys or controls to browse.">
+      <div class="gallery-shell portfolio-rail">
+        <div class="gallery-controls"><span><b>25</b> little windows into AJ's world</span><div><button class="round-control" type="button" data-rail-prev="tattoo-gallery" aria-label="Previous tattoos">←</button><button class="round-control" type="button" data-rail-next="tattoo-gallery" aria-label="Next tattoos">→</button></div></div>
+        <div class="gallery" id="tattoo-gallery" data-rail tabindex="0" aria-label="Selected tattoo portfolio. Use arrow keys or controls to browse.">
           <button class="tattoo" data-src="assets/portfolio/20250730_145349.jpg" data-alt="Playful penguin pair tattoo with a tiny red flower"><img src="assets/portfolio/20250730_145349.jpg" alt="Playful penguin pair tattoo" width="900" height="900"><span>Playful</span></button>
           <button class="tattoo" data-src="assets/portfolio/20240717_190946_IMG_9636.jpg" data-alt="Black and grey bird in flight wrapping around a branch"><img src="assets/portfolio/20240717_190946_IMG_9636.jpg" alt="Bird in flight tattoo" width="900" height="900"><span>Birds</span></button>
           <button class="tattoo" data-src="assets/portfolio/20240601_101320_IMG_8551.jpg" data-alt="Fine-line shell, waves, flowers and geometric rays"><img src="assets/portfolio/20240601_101320_IMG_8551.jpg" alt="Fine-line shell and waves tattoo" width="900" height="900"><span>Stories</span></button>
@@ -90,7 +93,36 @@
           <button class="tattoo" data-src="assets/portfolio/20240628_132115_IMG_9124.jpg" data-alt="Delicate fine-line symbolic spine tattoo"><img src="assets/portfolio/20240628_132115_IMG_9124.jpg" alt="Fine-line spine tattoo" width="900" height="900"><span>Delicate</span></button>
         </div>
       </div>
-      <p class="work-note">Every tattoo begins with your meaning, not somebody else's moodboard.</p>
+
+      <div class="gallery-shell portfolio-rail flash-rail">
+        <div class="gallery-controls"><span><b>Available</b> flash designs</span><div><button class="round-control" type="button" data-rail-prev="flash-gallery" aria-label="Previous flash designs">←</button><button class="round-control" type="button" data-rail-next="flash-gallery" aria-label="Next flash designs">→</button></div></div>
+        <div class="gallery flash-gallery" id="flash-gallery" data-rail tabindex="0" aria-label="Available flash designs. Use arrow keys or controls to browse.">
+          <button class="flash-card" type="button" data-lightbox data-src="assets/flash/img_7314-1600.webp" data-alt="Colourful raven flash design with geometric pattern and pink paint marks"><img src="assets/flash/img_7314-640.webp" alt="Colourful raven flash design" width="453" height="640" loading="lazy"><span>Raven</span></button>
+          <button class="flash-card" type="button" data-lightbox data-src="assets/flash/img_7315-1600.webp" data-alt="Black-and-white collage flash with a classical figure, bird, flowers and geometric marks"><img src="assets/flash/img_7315-640.webp" alt="Black-and-white classical collage flash design" width="453" height="640" loading="lazy"><span>Collage</span></button>
+          <button class="flash-card landscape" type="button" data-lightbox data-src="assets/flash/img_7316-1600.webp" data-alt="Coiled snake flash design filled with radiating black stripes"><img src="assets/flash/img_7316-640.webp" alt="Striped snake flash design" width="640" height="453" loading="lazy"><span>Snake</span></button>
+          <button class="flash-card" type="button" data-lightbox data-src="assets/flash/img_7317-1600.webp" data-alt="Softly shaded otter flash design wearing a red crown"><img src="assets/flash/img_7317-640.webp" alt="Crowned otter flash design" width="453" height="640" loading="lazy"><span>Royal otter</span></button>
+          <button class="flash-card landscape" type="button" data-lightbox data-src="assets/flash/img_7318-1600.webp" data-alt="Simple hand-drawn chick flash with the words cute coot"><img src="assets/flash/img_7318-640.webp" alt="Cute coot chick flash design" width="640" height="480" loading="lazy"><span>Cute coot</span></button>
+          <button class="flash-card landscape" type="button" data-lightbox data-src="assets/flash/img_7319-1600.webp" data-alt="Playful triceratops flash design with a small flower on its hip"><img src="assets/flash/img_7319-640.webp" alt="Playful triceratops flash design" width="640" height="480" loading="lazy"><span>Triceratops</span></button>
+          <button class="flash-card" type="button" data-lightbox data-src="assets/flash/img_7320-1600.webp" data-alt="Fine-line heron flash design flying with its wings spread"><img src="assets/flash/img_7320-640.webp" alt="Flying heron flash design" width="480" height="640" loading="lazy"><span>Heron</span></button>
+          <button class="flash-card" type="button" data-lightbox data-src="assets/flash/img_7321-1600.webp" data-alt="Fine-line long-beaked bird flash design gliding with open wings"><img src="assets/flash/img_7321-640.webp" alt="Gliding bird flash design" width="480" height="640" loading="lazy"><span>Glide</span></button>
+          <button class="flash-card" type="button" data-lightbox data-src="assets/flash/img_7322-1600.webp" data-alt="Black ink flower arrangement flash with loose red line-drawn blooms"><img src="assets/flash/img_7322-640.webp" alt="Black and red flower arrangement flash design" width="480" height="640" loading="lazy"><span>Wild flowers</span></button>
+          <button class="flash-card" type="button" data-lightbox data-src="assets/flash/img_7323-1600.webp" data-alt="Fine-line bird flash design landing with one wing raised"><img src="assets/flash/img_7323-640.webp" alt="Landing bird flash design" width="480" height="640" loading="lazy"><span>Landing</span></button>
+        </div>
+        <p class="rail-cta">Found your one? <a href="#contact">Tell AJ which design caught you.</a></p>
+      </div>
+
+      <div class="gallery-shell portfolio-rail reviews-rail">
+        <div class="gallery-controls"><span><b>Lovely</b> things people said</span><div><button class="round-control" type="button" data-rail-prev="reviews-gallery" aria-label="Previous reviews">←</button><button class="round-control" type="button" data-rail-next="reviews-gallery" aria-label="Next reviews">→</button></div></div>
+        <div class="gallery reviews-gallery" id="reviews-gallery" data-rail tabindex="0" aria-label="Client reviews. Use arrow keys or controls to browse.">
+          <figure class="review-card"><blockquote>“I started out terrified of needles and convinced my low pain tolerance would stop me from ever getting a sleeve, but she completely proved me wrong! Her friendly attitude, patience and ability to keep me relaxed made every session feel so much easier than I expected. Thanks to her, I now have a tattoo sleeve, and honestly, I'd love to keep coming back until I run out of skin to tattoo!”</blockquote><figcaption>— Nate</figcaption></figure>
+          <figure class="review-card"><blockquote>“So happy with my tattoo by Amy! Her attention to detail, clean work and calm energy made the whole experience so easy and enjoyable. My tattoo turned into something better than I imagined.”</blockquote><figcaption>— Prasana</figcaption></figure>
+          <figure class="review-card"><blockquote>“It is not only the craft and art that makes you go to a certain tattoo artist. A big chunk is the vibe of that tattoo artist. With Amy, you know you get craft and art but also lovely vibes and a good atmosphere. Unbeatable combination!”</blockquote><figcaption>— Phillip</figcaption></figure>
+          <figure class="review-card"><blockquote>“A.J. is a great artist and a lovely person. She is kind, creative and professional from the first sketch until the final result.”</blockquote><figcaption>— Sander</figcaption></figure>
+          <figure class="review-card"><blockquote>“Watching Amy create an art piece on my body was mesmerising. I almost forgot the pain… She not only designed an awesome original piece but guided me through placement and aftercare.”</blockquote><figcaption>— Marius</figcaption></figure>
+          <figure class="review-card"><blockquote>“Amy has been very professional and accommodating. Amy's ideas and designs were amazing, and she was very knowledgeable. I have four small tattoos done by her and would highly recommend her.”</blockquote><figcaption>— Charlie</figcaption></figure>
+          <figure class="review-card"><blockquote>“Amy took my random ideas and transformed them into the most beautiful, original full sleeve. I can't wait to go back for more.”</blockquote><figcaption>— Lindsay</figcaption></figure>
+        </div>
+      </div>
     </section>
 
     <section class="process section" aria-labelledby="process-title">
@@ -101,25 +133,26 @@
     <section class="know section" id="know" aria-labelledby="know-title">
       <div class="section-marker light">04 / Good to know</div><div class="know-grid"><div><h2 id="know-title">Questions are <em>very</em> welcome.</h2><p>Tattoo newcomer? Seasoned collector? Here's the short version.</p></div>
       <div class="faqs">
-        <details><summary>How do I book?<span>+</span></summary><p>Start with the enquiry form below. Tell AJ your idea, approximate size and placement. This preview creates an email draft; no details are stored by the website.</p></details>
-        <details><summary>How much will it cost?<span>+</span></summary><p>Pricing depends on size, placement, detail and time. AJ will confirm a quote once the idea is clear. Final pricing details still need Amy's approval.</p></details>
+        <details><summary>How do I book?<span>+</span></summary><p>Start with the enquiry form below. Tell AJ your idea, approximate size and placement. AJ will then reach out to you for further information and design-related questions.</p></details>
+        <details><summary>How much will it cost?<span>+</span></summary><p>Pricing depends on size, placement, detail and time. AJ will confirm a quote once the idea is clear. We charge a standard rate of €100 per hour.</p></details>
         <details><summary>Will it hurt?<span>+</span></summary><p>Probably a bit—everyone and every placement is different. AJ will talk you through the experience and help you feel at ease.</p></details>
         <details><summary>Do you create custom designs?<span>+</span></summary><p>Yes. Collaboration is the whole point: your story and aesthetics, translated through AJ's illustrative art practice.</p></details>
-        <details><summary>Where are you based?<span>+</span></summary><p>AJ works in the Netherlands by appointment. The exact service area and licensed appointment locations will be confirmed before launch.</p></details>
-        <details><summary>What about consent and aftercare?<span>+</span></summary><p>These will be separate, properly reviewed parts of the final booking process. They are intentionally not collected in this preview.</p></details>
+        <details><summary>Where are you based?<span>+</span></summary><p>AJ works in the Netherlands by appointment. Her studio is mobile, and her clients often opt for at-home appointments for a more personal and relaxed experience.</p></details>
+        <details><summary>What about consent?<span>+</span></summary><p><a class="download-link" href="assets/downloads/seriously-ridiculous-tattoo-consent-form-draft.pdf" download>Download the draft consent form (PDF)</a>. This is a review copy to read before your appointment; no consent or health information is collected by this website.</p></details>
+        <details><summary>What about aftercare?<span>+</span></summary><div class="details-content"><p>AJ recommends using a second skin, which she provides and applies for you after the tattoo. The second skin is removed after five days, and then light daily cleaning and moisturising are recommended.</p><p>A few tips:</p><ul><li>No swimming or bathing until the tattoo is completely healed: approximately two weeks.</li><li>Avoid sport that causes excessive sweating while your tattoo is healing.</li><li>Avoid the sun while your tattoo is healing.</li><li>If your tattoo is itchy, do not scratch.</li><li>Do not cover your tattoo in any bandages or coatings unless prescribed by AJ or a doctor.</li><li>Once your tattoo is healed, invest in good sunscreen to prevent sun damage and premature ageing.</li><li>The less fuss you give your tattoo, the better it will heal.</li></ul></div></details>
       </div></div>
     </section>
 
-    <section class="shop section" id="shop" aria-labelledby="shop-title"><div class="shop-burst" aria-hidden="true">coming<br>soon!</div><div><div class="section-marker">05 / Wear the art</div><h2 id="shop-title">Ink for your walls.<br>Art for your body.</h2><p>Screenprints and T-shirts are brewing. Wear an AJ tee to your tattoo appointment and get 10% off your tattoo.</p><a class="text-link" href="#contact">Ask AJ what's coming <span aria-hidden="true">↗</span></a></div><div class="shirt" aria-hidden="true"><span>seriously<br>ridiculous<br>tattoos.</span></div></section>
+    <section class="shop section" id="shop" aria-labelledby="shop-title"><div><div class="section-marker">05 / Shop AJ</div><h2 id="shop-title">Ink for your walls.<br>Art you can wear.</h2><p>When AJ is not tattooing, she is creating screenprints for your walls and your wardrobe. Wear an AJ tee to your next tattoo appointment and get 10% off your tattoo.</p></div><div class="launch-star" aria-label="Launching September 2026"><span>launching</span><strong>Sept<br>2026</strong></div></section>
 
     <section class="contact section" id="contact" aria-labelledby="contact-title">
-      <div class="contact-intro"><div class="section-marker light">06 / Let's make something</div><h2 id="contact-title">Got an idea<br>under your skin?</h2><p>Tell AJ about it. Weird, wonderful and half-formed ideas all belong here.</p><a href="mailto:inky.amyjane@gmail.com">inky.amyjane@gmail.com</a><a href="https://www.instagram.com/inky.amyjane/" rel="noreferrer">@inky.amyjane</a></div>
-      <form id="enquiry-form"><label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label><label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><label>Phone <small>(optional)</small><input name="phone" type="tel" autocomplete="tel" placeholder="Your number"></label><label>Tell me about your tattoo<textarea name="idea" required rows="4" placeholder="Idea, placement, approximate size..."></textarea></label><button class="button button-pink" type="submit">Create email to AJ <span aria-hidden="true">↗</span></button><p class="form-note">Nothing is sent or stored here. This button opens a draft in your email app for you to review and send.</p></form>
+      <div class="contact-intro"><div class="section-marker light">06 / Let's make something</div><h2 id="contact-title">Got an idea<br>under your skin?</h2><p>Tell AJ about it. Weird, wonderful and half-formed ideas all belong here.</p><a href="mailto:inky.amyjane@gmail.com">inky.amyjane@gmail.com</a><a href="https://wa.me/31617805417" rel="noreferrer">WhatsApp AJ: 06 1780 5417</a><a href="https://www.instagram.com/inky.amyjane/" rel="noreferrer">@inky.amyjane</a></div>
+      <form id="enquiry-form"><label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label><label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><label>Phone<input name="phone" type="tel" autocomplete="tel" required placeholder="Your number"></label><label>Tell me about your tattoo<textarea name="idea" required rows="4" placeholder="Idea, placement, approximate size..."></textarea></label><button class="button button-pink" type="submit">Create email to AJ <span aria-hidden="true">↗</span></button><p class="form-note">Nothing is sent or stored here. This button opens a draft in your email app for you to review and send.</p></form>
     </section>
   </main>
 
   <footer><a class="brand footer-brand" href="#top"><span>seriously</span><span>ridiculous</span><span>tattoos.</span></a><p>Made with care, colour &amp; excellent decisions.</p><p>© <span id="year">2026</span> AJ · Preview</p></footer>
 
-  <dialog class="lightbox" aria-label="Expanded tattoo photograph"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img alt=""></dialog>
+  <dialog class="lightbox" aria-label="Expanded portfolio image"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img alt=""></dialog>
 </body>
 </html>

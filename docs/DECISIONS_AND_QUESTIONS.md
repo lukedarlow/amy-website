@@ -19,12 +19,13 @@ Update this file when Amy or Luke answers a question. Record the date and decisi
 
 - [ ] Which city/region does Amy serve, and is Utrecht accurate for every SEO phrase?
 - [ ] What does "mobile studio" mean operationally, and which work locations are licensed?
-- [ ] What prices and pricing rules belong in About?
+- [x] What prices and pricing rules belong in About? **30 July 2026:** publish a standard rate of €100 per hour; final quotes depend on size, placement, detail, and time.
 - [ ] Does Amy accept clients aged 16-17, or is her own policy 18+?
 - [ ] Is the website English-only, Dutch/English, or multilingual?
 - [ ] What exact geographic/address information may be public?
 - [ ] Is the WhatsApp number intended to display internationally as a `+31` number?
-- [ ] Are flash art, client reviews, an artist portrait, logo/wordmark, aftercare copy, and price copy available?
+- [x] Are flash art, client reviews, an artist portrait, logo/wordmark, aftercare copy, and price copy available? **30 July 2026:** Amy supplied ten available flash designs, seven approved named reviews, three artist photographs, aftercare copy, and price copy. No new logo/wordmark was supplied.
+- [x] May the supplied reviews, flash, and portraits be published? **30 July 2026:** Luke confirmed permission for all supplied items on the public review preview.
 - [ ] Does Amy have written permission to publish every shortlisted client photo and review?
 - [ ] Which 25 tattoo works does Amy ultimately approve after the structured review?
 
@@ -38,6 +39,9 @@ Update this file when Amy or Luke answers a question. Record the date and decisi
 - [ ] What content should Amy be able to edit, and from what kind of interface?
 
 ## Privacy, consent, and operations
+
+- [x] How should the supplied consent form appear in the review site? **30 July 2026:** publish the exact supplied PDF as a clearly labelled draft download only; do not collect or submit consent data online.
+- [x] How should Amy's mobile-studio and aftercare feedback be handled in this review? **30 July 2026:** use Amy's supplied wording with light proofreading. Keep the existing licensing and qualified-review gates open for production.
 
 - [ ] What is the lawful basis and retention period for enquiries, bookings, consent forms, ink records, and declined requests?
 - [ ] Who may access submissions and signed forms?
