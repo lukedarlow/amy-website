@@ -33,19 +33,21 @@ Add a dependency-free Node validation script and a pull-request workflow with re
 
 - [x] 2026-07-31: Audited repository access, the existing ruleset, deployment workflow, and Pages environment.
 - [x] 2026-07-31: Added and verified dependency-free validation locally (54 files, 25 portfolio images, 12.8 MiB).
-- [ ] Push and observe the new validation workflow.
-- [ ] Require the check and verify final controls.
+- [x] 2026-07-31: Merged protected pull request #1 after the new `validate` check passed.
+- [x] 2026-07-31: Required the GitHub Actions `validate` check and verified repository access, trusted-action restrictions, read-only default workflow permissions, and the main-only Pages environment.
 
 ## Decisions
 
 - 2026-07-31: Extend the existing `protection` ruleset instead of creating an overlapping second ruleset.
 - 2026-07-31: Keep validation dependency-free to match the site's architecture and reduce supply-chain exposure.
 - 2026-07-31: Keep deployment permissions scoped to the deployment job; validation receives only `contents: read`.
+- 2026-07-31: Allow only GitHub-authored Actions and use their current supported major versions; third-party Actions are disabled repository-wide.
 
 ## Discoveries and risks
 
 - A required status check must exist on GitHub before it can be safely enforced and tested.
 - The active ruleset has no bypass actors, so direct pushes to targeted branches are intentionally blocked after enforcement.
+- GitHub's July 2026 runners warned that the former action versions used deprecated Node 20 runtimes; the workflows were moved to the current official majors.
 
 ## Verification and acceptance
 
